@@ -1,0 +1,80 @@
+/* Scss Document */
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+     :::::::::::::::::::::::::::::::::::::::::::::::::   CONTENT BACK   ::::::::::::::::::::::::::::::::::::::::::::::: 
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.contentOuter {/*
+	margin-top: 50px;*/
+	max-width: 1140px;
+	@extend .wrapStyle1;
+	@extend .clearfix;
+	@extend .center-block;
+	#back & {
+		@media (max-width: 767px) {
+			margin: 3px 5px;
+			}
+		}
+}
+.content {/*
+	padding: 25px 46px 25px;
+	margin: 15px 0 15px 15px;*/
+	background: $black2;
+	clear: both;
+	font-size: 15px;
+	line-height: 1.75em;
+	text-align: left;
+	border: $border1;
+	@extend .col-sm-9;
+	@media (max-width: 767px) {
+		padding: 10px 20px 20px;
+		margin: 15px;
+		}
+	@media (max-width: 335px) {
+		padding-left: 15px;
+		}
+	a.btn {
+		margin-bottom: 5px;
+		}
+	}
+	
+.contentBack {
+	padding: 0;
+	}
+
+.imgBack {
+	text-align: center;
+	img {
+		border-radius: $borderRadius2;
+		border: 1px solid $gray;
+		max-width: 100%;
+		margin: 0 auto;
+		@media (max-width: 767px) {
+			border-radius: 0px;
+			border: none;
+			margin: 0;
+			}
+		@media (max-width: 550px) {
+			display: none;
+			}
+		}
+	}
+
+.contentImg {
+  margin-bottom: 15px; }
+
+.contentImg img {
+  border-radius: 9px;
+  width: 100%;
+  max-width: 100%; }
+
+
+
+.moduleBack {
+	@extend .wrapStyle5;
+	}
+
+
+
+

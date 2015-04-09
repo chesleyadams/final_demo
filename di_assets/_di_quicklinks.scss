@@ -1,0 +1,184 @@
+/* Scss Document */
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::   QUICK LINKS   :::::::::::::::::::::::::::::::::::::::::::::: 
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.quickLinkWrap {
+	max-width: 1120px;
+	margin: 0 auto;
+	position: relative;
+	top: -110px;
+	@media (max-width: 767px) {
+		top: -40px;
+		}
+	ul {
+		list-style: none;
+		margin: 0 auto;
+		padding: 0 2px;
+		@media (max-width: 991px) {
+			}
+		}
+	li {
+		width: 24.75%;
+		float: none;
+		display: inline-block;
+		text-align: center;
+		&:hover,
+		&:active,
+		&:focus {
+			background: $black2;
+			}
+		@media (max-width: 950px) {
+			width: 24.5%;
+			}
+		@media (max-width: 767px) {/*
+			background: url(../images/bg_hr.gif) repeat-x bottom;*/
+			width: 100%;
+			display: block;
+			border-bottom: 2px solid transparent;
+			border-top: 3px solid transparent;
+			padding-top: 8px;
+			padding-bottom: 8px;
+			&:hover {
+				background: $black2;
+				border-bottom: 2px solid $white5;
+				border-top: 3px solid $black1;
+				}
+			}
+		span.quickLinkIcon {
+			display: block;
+			width: 100%;
+			}
+		}
+	li a {
+		color: $fi-primary;
+		font-size: 20px;
+		text-decoration: none;
+		padding: 30px 0;
+		@media (max-width: 950px) {
+			font-size: 17px;
+			}
+			&:hover,
+			&:focus,
+			&:active,
+			&.active {
+				color: $fi-apply;
+				}
+			@media (max-width: 767px) {
+				padding: 22px 0;
+				}
+		}
+	.quickLinkNav {
+		@extend .wrapStyle3;
+		a {
+			color: $fi-apply;
+			font-size: 20px;
+			line-height: 1.2em;
+			padding: 0;
+			margin: 15px auto;
+			&.lastQuickLink {
+				}
+			@media (max-width: 950px) {
+				font-size: 17px;
+				}
+			@media (max-width: 767px) {
+				background: none;
+				}
+		}
+	.quickLinkNav a:hover,
+	.quickLinkNav a:focus,
+	.quickLinkNav a:active,
+	.quickLinkNav a.active {
+		color: $fi-default;
+		}
+	}
+
+.quickLinkCol {
+	width: 24.75%;
+	float: none;
+	display: inline-block;
+	text-align: center;
+	margin: 35px 0;
+	@media (max-width: 950px) {
+		width: 24.5%;
+		}
+	&.lastQuickLink {
+			background: none;
+			}
+		@media (max-width: 767px) {
+		display: none;
+		}
+	li {
+		width: 100%;
+		display: block;
+		}
+	}
+
+
+.quickLinks {
+	text-align: center;
+	h1 {
+		margin: 0;
+		padding: 17px 20px 15px;
+		box-shadow: 0 1px 6px rgba(0,0,0,.15);
+		background: rgba(255,255,255,.5);
+		font-size: 23px;
+		font-weight: 600;
+		a {
+			text-decoration: none;
+			color: $fi-apply;
+			vertical-align: middle;
+			}
+		a.more {
+			color: inherit;
+			font-size: 14px;
+			height: 32px;
+			line-height: 32px;
+			}
+		a.more:hover,
+		a.more:focus,
+		a.more:active,
+		a.more.active {
+			color: $fi-apply;
+			}
+		span {
+			margin-right: 5px;
+			position: relative;
+			top: -2px;
+			}
+		}
+	ul {
+		text-align: left;
+		width: 90%;
+		list-style: none;
+		background-image: none;
+		padding: 0 0 10px;
+		margin: 10px auto;
+		li {
+			margin: 0;
+			padding: 0;
+			border-bottom: 1px solid rgba(138,159,163,.3);
+			border-top: 2px solid $white1;
+			}
+		li.quickLinksTop {
+			border-top: none;
+			}
+		li a {
+			@extend .clearfix;
+			text-decoration: none;
+			font-size: 14px;
+			font-weight: 600;
+			padding: 0 0 4px;
+			line-height: 30px;
+			height: 30px;
+			}
+		li a span {
+			}
+		}
+	}
+
+}
+
+

@@ -1,0 +1,141 @@
+/* Scss Document */
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+     :::::::::::::::::::::::::::::::::::::::::::::::::   FORMS/TABLES   :::::::::::::::::::::::::::::::::::::::::::::: 
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+.input-group {
+	margin-bottom: 4px;
+	}
+
+.form-control {
+	color: $fi-apply;
+	}
+
+.form-inline {
+	.btn {
+		vertical-align: bottom;
+		}
+	}
+
+.form-horizontal .radio,
+.form-horizontal .checkbox,
+.form-horizontal .radio-inline,
+.form-horizontal .checkbox-inline,
+.radio,
+.checkbox {/**/
+	top: 20px;
+	margin-top: 0;
+	margin-bottom: 8px;
+	padding-top: 3px;
+	padding-bottom: 15px;
+	min-height: 27px;
+	@extend .clearfix;
+	}
+.radio {
+	label input {
+		position: relative;
+		top: 7px;
+		}
+	}
+.checkbox {
+	label input {
+		position: relative;
+		top: 7px;
+		}
+	}
+
+.radio-inline input {
+	top: 3px;
+	}
+.checkbox-inline input {
+	top: 3px;
+	}
+
+label {/*
+	@extend .sr-only;*/
+	display: block;
+	margin: 0 0 6px 0;
+	.checkbox & {
+		display: block;
+		margin: 0 0 6px 0;
+		}
+	.radio & {
+		display: block;
+		margin: 0 0 6px 0;
+		}
+	}
+
+.appfield1 {
+  box-shadow: none; }
+
+.appfield2 {
+  background: $black2;
+  }
+
+
+
+table {
+  background: none;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  padding: 0 10px 30px 10px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: normal; }
+
+form table {/**/
+  border: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  padding: 0; }
+
+.tableheader {/*
+  background: $fi-default;
+  color: #fff;*/
+  font-weight: normal;
+  padding: 15px;
+  font-size: 19px;
+  border-radius: 6px 6px 0 0;
+  -webkit-border-radius: 6px 6px 0 0;
+  -moz-border-radius: 6px 6px 0 0; }
+
+td {
+  text-align: left;
+  }
+
+th {/*
+  background-color: $fi-submit;
+  color: #fff;
+  border-bottom: 1px solid #fff;*/
+  text-align: left;
+  padding: .3em 15px;
+  width: 98%;
+  margin: 0 auto; }
+
+.tablecontent1 {/*
+  border-bottom: 1px solid #fff;*/
+  background: $black1;
+  padding: 8px 15px;
+  width: 98%;
+  margin: 0 auto; }
+
+.tablecontent2 {/*
+  border-bottom: 1px solid #fff;*/
+  background: $black2;
+  padding: 8px 15px;
+  width: 98%;
+  margin: 0 auto; }
+
+.table a:active, table a:hover {
+  text-decoration: underline; }
+
+.table-hover > tbody > tr:hover {
+  background: $black5;
+}
+
+
+
+

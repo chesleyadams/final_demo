@@ -1,0 +1,167 @@
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+    :::::::::::::::::::::::::::::::::::::::::::::::   WRAPS/PRESENTATION   ::::::::::::::::::::::::::::::::::: 
+    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+	$border1: 1px solid rgba(255,255,255,1.0);
+	$border2: 1px solid rgba(0,0,0,1.0);
+	$border3: 2px solid #003677;
+
+	$borderRadius1: 0 0 $border-radius-small $border-radius-small;
+	$borderRadius2: 12px 12px 0 0;
+	
+	$boxShadow1: inset 0 -19px 54px rgba(255,255,255,0.26), 0 2px 8px rgba(0,0,0,0.75);
+	$box-shadow2: inset 0 0 43px 12px rgba(255,255,255,.7), 0 0 2px rgba(0,0,0,.09);
+
+	$background1: inherit;
+	$background2: inherit;
+	$background3: inherit;
+
+
+.innerWrap {/**/
+		max-width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+		@extend .clearfix;
+		@media (max-width: 767px) {
+			.mastInner {
+				padding: 0;
+				}
+			}
+		}
+.innerWrap2 {/**/
+	max-width: 1142px;
+	@extend .innerWrap;
+	position: relative;
+	}
+
+.col1 {
+	@extend .col-sm-9;
+	}
+.col2 {
+	@extend .col-sm-3;
+	}
+.col1,
+.col2 {
+	@media (max-width: 767px) {
+		padding: 0;
+		margin-bottom: 15px;
+		}
+	}
+
+.wrapStyle1 {/**/
+	border-radius: $border-radius-large;
+	border: $border2;
+	background: $black1;
+	}
+.wrapStyle2 {/**/
+	border-radius: $border-radius-small;
+	background: $black2;
+	}
+.wrapStyle3 {/**/
+	border: $border1;
+	box-shadow: $box-shadow2;
+	background: $black5;
+	}
+.wrapStyle4 {/**/
+	border: $border1;
+	border: 1px solid $fi-default;
+	border-radius: $borderRadius1;
+	background: $black10;
+	}
+.wrapStyle5 {/**/
+	border: 1px solid $gray;
+	background: $black20;
+	}
+
+#home,
+#back {
+	}
+.mastWrap {
+	position: relative;
+	border-bottom: $border3;
+	text-align: center;
+	@media (max-width: 991px) {
+		  padding: 0;
+		  }
+	@media (max-width: 767px) {
+		  background: $black5;
+		  }
+	}
+
+
+.mastInner {
+	@extend .col-xs-12;
+	}
+
+.navWrap {
+	/*
+	background-color: $fi-default;
+	background-image: ;
+	padding: 15px 0;*/
+	background-repeat: no-repeat;
+	background-position: center;
+	border-bottom: $border3;
+	@media (max-width: 767px) {
+		padding: 0;
+		}
+	}
+
+.promoOuter {
+	@extend .col-xs-12;
+	@extend .pull-right;
+	padding-right: 0;
+	@media (max-width: 767px) {
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+		position: initial;
+		}
+	#back & {/*
+		padding-bottom: 90px;*/
+		}
+	}
+
+.contentWrap1,
+.contentWrap2,
+.navWrap {
+	@extend .clearfix;
+	}
+
+.contentWrap1 {/*
+	background: $gray3;*/
+	@media (max-width: 767px) {
+		padding: 0;
+		}
+	.row {
+		@media (max-width: 767px) {
+			margin: 0;
+			}
+		}
+	}
+.contentWrap2 {/*
+	background: $fi-default;*/
+	}
+
+
+
+
+.footWrap {/**/
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+	@media (max-width: 991px) {
+		text-align: center;
+		margin-right: 0;
+		}
+	@media (max-width: 767px) {
+		margin-bottom: 0px;
+		}
+	#back & {
+		@media (max-width: 767px) {
+			margin-bottom: 15px;
+			}
+		}
+	}

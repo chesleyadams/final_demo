@@ -1,0 +1,214 @@
+/* Scss Document */
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::   FOOT   :::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.footWrap {
+	li {
+		list-style: none;
+		list-style-type: none;
+		float: none;
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 5px;
+		}
+	li a.intuit > img {
+		margin-left: -12px;
+		}
+	}
+
+.footTop,
+.footBottom {
+	margin: 0 auto;
+	padding: 10px 0 0;
+	width: 100%;
+	font-size: 12px;
+	ul {
+		padding: 0;
+		}
+	@media (max-width: 900px) {
+		ul,
+		p {
+			display: block;
+			text-align: center;
+			}
+		}
+	}
+
+.footTop {
+	@extend .clearfix;
+	text-align: left;
+	}
+
+.footNavCol {
+	width: 19.75%;
+	float: left;
+	display: inline-block;
+	@media (max-width: 991px) {
+		width: 33%;
+		}
+	@media (max-width: 590px) {
+		width: 49.75%;
+		}
+	ul {
+		list-style: none;
+		@media (max-width: 991px) {
+			padding-left: 12px;
+			}
+		}
+	li {
+		background: none;
+		padding: 0;
+		}
+	li a {
+		color: $fi-primary;
+		font-size: 14px;
+		text-decoration: none;
+		padding: 6px 0;
+		}
+	li a:hover,
+	li a:focus,
+	li a:active,
+	li a.active {
+			color: $fi-apply;
+			}
+	li.footPnav a {
+		color: $fi-apply;
+		font-size: 18px;
+		border-bottom: 1px solid rgba(0,0,0,.1);
+		padding: 12px 0 8px;
+		}
+	li.footPnav a:hover,
+	li.footPnav a:focus,
+	li.footPnav a:active,
+	li.footPnav a.active {
+		color: $fi-default;
+		}
+	}
+
+
+.footBottom {
+	ul {
+		@extend .list-inline;
+		margin-left: 0;
+		margin-top: 15px;
+		}
+	ul li {
+		padding-left: 1px;
+		padding-right: 1px;
+		}
+	@extend .clearfix;
+	}
+
+.footLeft,
+.footRight {
+	width: 50%;
+	@media (max-width: 600px) {
+		width: 100%;
+		float: none;
+		display: block;
+		}
+	}
+.footLeft {
+	float: left;
+	display: inline-block;
+	text-align: left;
+	p {
+		max-width: 80%;
+		@media (max-width: 600px) {
+			max-width: 100%;
+			}
+		}
+	}
+.footRight {
+	float: right;
+	display: inline-block;
+	text-align: right;
+	p {
+		.footBottom & {
+			display: inline;
+			margin-left: 30px;
+			margin-bottom: 20px;
+			&.nmls {
+				margin-left: 0;
+				}
+			@media (max-width: 900px) {
+				display: block;
+				text-align: center;
+				}
+			}
+		}
+	li a {
+		font-size: 14px;
+		text-decoration: underline;
+		&:hover,
+		&:focus,
+		&:active,
+		&.active {
+			color: $fi-primary;
+			}
+		}
+	}
+
+.footUti,
+.compliance,
+.footLogo {
+	display: inline;
+    height: 60px;
+    line-height: 60px;
+    padding: 0;
+    vertical-align: middle;
+	@media (max-width: 991px) {
+		text-align: center;
+		}
+	}
+
+.footUti {
+	@extend .col-md-4;
+	ul li {
+		color: $fi-apply;
+		a {
+			color: $fi-apply;
+			text-decoration: none;
+			font-size: 14px;
+			}
+		a:hover,
+		a:focus,
+		a:active,
+		a.active {
+			color: $fi-default;
+			}
+		}
+	@media (max-width: 991px) {
+		padding-left: 0px;
+		}
+	}
+
+.compliance {
+	@extend .col-md-3;
+	text-align: right;
+	@media (max-width: 991px) {
+		text-align: center;
+		padding-left: 0;
+		}
+	}
+
+.footLogo {
+	@extend .col-md-5;
+	text-align: right;
+	@media (max-width: 991px) {
+		text-align: center;
+		padding-left: 0px;
+		}
+	img {
+		@media (max-width: 550px) {
+			max-width: 100%;
+			}
+		}
+	}
+
+
+
+

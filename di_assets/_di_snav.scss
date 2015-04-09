@@ -1,0 +1,101 @@
+/* Scss Document */
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+     ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::   sNAV   ::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.sNav {
+  background: none;
+  padding-bottom: 0;
+  text-align: left;
+  border-bottom: 2px solid $white30;
+  margin: 15px 15px 0 0;
+  width: 21%;
+  float: right;
+  @media (max-width: 767px) {
+	  width: 100%;
+	  margin: 15px;
+	  }
+	#back & {
+		border: none;
+		}
+  }
+
+.sNav ul li.ttlSnav {
+  font-size: 18px;
+  color: #fff;
+  margin: 0;
+  padding: 18px 18px 0 0;
+  line-height: normal;
+  font-weight: 400;
+  border: none;
+  @media (max-width: 1110px) {
+	font-size: 11px;
+	font-weight: 600;
+	}
+  @media (max-width: 767px) {
+	font-size: 22px;
+	font-weight: 600;
+	}
+  span {
+	  padding: 0 6px 0 18px;
+	  @media (max-width: 885px) {
+		  padding: 0 6px;
+		  }
+	   @media (max-width: 767px) {
+		   padding: 0 18px;
+		   }
+	  }
+  }
+
+.sNav ul {
+  margin: 0;
+  padding: 0 0 22px;
+  background: $black2;
+  border-radius: $border-radius-base;
+  @media (max-width: 767px) {
+	  margin: 0 0 0 28px;
+	  }
+  }
+
+.sNav ul li {
+  margin: 0 12px;
+  padding: 0 6px 0 20px;
+  list-style: none;
+  list-style-type: none;
+  font-size: 13px;
+	}
+
+.sNav ul li a {
+  text-decoration: none;
+  color: $white80;
+  padding: 6px 12px 6px 7px;
+  @media (max-width: 767px) {
+	  padding-left: 22px;
+	  }
+  }
+
+.sNav ul li:hover,
+.sNav ul li:focus {
+  background: $white10;
+  	& a {
+		color: #fff;
+		}
+  }
+
+.sNav ul li.ttlSnav.active,
+.sNav ul li.ttlSnav:hover,
+.sNav ul li.ttlSnav:focus {
+  background: none;}
+
+.sNav ul li.active {
+  background: $white20;
+  	& a {
+		color: #fff;
+		}
+  }
+
+
+
+

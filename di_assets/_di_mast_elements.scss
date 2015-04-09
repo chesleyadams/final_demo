@@ -1,0 +1,269 @@
+/* Scss Document */
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+     :::::::::::::::::::::::::::::::::::::::::::::::::   MAST ELEMENTS   :::::::::::::::::::::::::::::::::::::::::::: 
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.navbar-toggle {
+	z-index: 6000;
+	position: absolute;
+	top: 22px;
+	right: 12px;
+	background: $brand-success;
+		.icon-bar {
+		background: #fff;
+		}
+	@media (max-width: 550px) {
+		right: -6px;
+		padding: 6px 8px;
+		.icon-bar {
+			width: 18px;
+			}
+		}
+	}
+
+.navbar-collapse {
+	@media (max-width: 767px) {
+		padding-left: 0;
+		padding-right: 0;
+		}
+	}
+
+.searchWrap {
+	@extend .clearfix;
+	width: inherit;
+	.footWrap & {
+		margin-left: 0;
+		margin-right: 0;
+		}
+	@media (max-width: 991px) {
+		margin-right: 20px;
+		width: 96%;
+		.navbar-form {
+			padding: 0 15px;
+			margin: 5px auto;
+			}
+		}
+	@media (max-width: 767px) {
+		clear: none;
+		float: none;
+		left: 3.5%;
+		margin: 0 auto;
+		padding: 0 8px;
+		width: 93%;
+		}
+	}
+
+.search {
+	margin-bottom: 0;
+	float: right;
+	@media (max-width: 991px) {
+		text-align: center;
+		.btn {
+			width: 100%;
+			}
+		}
+	@media (max-width: 767px) {
+		float: none;
+		.btn {
+			width: 55px;
+			}
+		}
+	&.form-group,
+	.input-group {
+		width: 100%;
+		}
+	.form-control.searchField {
+		border-color: #c9dee9;
+		background: #f5f9fc;
+		box-shadow: none;
+		border-right: none;
+		}
+	.btn-primary {
+		background: $fi-primary;
+		border-color: $gray;
+		border-left: none;
+		box-shadow: none;
+		padding: 5.5px 12px;
+		&:hover,
+		&:focus,
+		&:active,
+		&.active {
+			background: $white90;
+			}
+		}
+	.navbar-form {
+		padding-left: 0;
+		padding-right: 0;
+		}
+	}
+
+
+
+.logo {
+	@extend .col-sm-3;
+	text-align: left;
+	padding-top: 0;
+	padding-bottom: 0;
+	@media (max-width: 991px) {
+		  padding: 0;
+		  }
+	@media (max-width: 767px) {
+		  border-bottom: 1px solid $black10;
+		  margin-bottom: 5px;
+		  background: #fff;
+		  }
+	img {
+		width: auto;
+		max-width: 100%;
+		}
+	}
+
+.uti {
+	@extend .col-sm-6;
+	text-align: right;
+	padding-top: 40px;
+	color: $fi-default;
+	font-weight: 600;
+	@media (max-width: 1140px) {
+		max-width: inherit;
+		  }
+	@media (max-width: 991px) {
+		  padding: 25px 0 0;
+		  max-width: 405px;
+		  }
+	@media (max-width: 767px) {
+		text-align: center;
+		float: none;
+		padding: 0;
+		margin-bottom: 3px;
+		max-width: inherit;
+		}
+	@media (max-width: 550px) {
+		text-align: left;
+		padding: 14px 0 0;
+		}
+	ul {
+		@extend .list-inline;
+		@media (max-width: 767px) {
+			margin: 0 auto;
+			float: none;
+			text-align: center;
+			}
+		> li {
+			padding-left: 0;
+			padding-right: 0;
+			}
+		}
+	li {
+		@media (max-width: 767px) {
+			margin-left: 0;
+			}
+		@media (max-width: 1140px) {
+			vertical-align: middle;
+			}
+		&.utiPipe {
+			padding: 0 2px;
+			}
+		span img {
+			position: relative;
+			top: -2px;
+			}
+		a {
+			font-size: 13.5px;
+			text-decoration: none;
+			padding: 0 2px;
+			font-weight: 400;
+			color: $fi-default;
+			@media (max-width: 1140px) {
+				font-size: 11px;
+				padding: 0 7px;
+				}
+			@media (max-width: 833px) {
+				font-size: 9px;
+				}
+			@media (max-width: 767px) {
+				font-size: 14.5px;
+				}
+			@media (max-width: 660px) {
+				font-size: 11px;
+				}
+			@media (max-width: 409px) {
+				font-size: 10px;
+				padding: 0;
+				}
+			}
+		&.liFirst {
+			@media (max-width: 1140px) {
+				float: left;
+				vertical-align: middle;
+				}
+			@media (max-width: 767px) {
+				float: none;
+				vertical-align: middle;
+				}
+			}
+		&.liFirst a {
+			font-weight: 600;
+			margin-right: 11%;
+			padding-top: 2px;
+			@media (max-width: 767px) {
+				padding-top: 0;
+				margin-right: 0;
+				}
+			}
+		a:hover,
+		a:active,
+		a.active,
+		a:focus {
+			text-decoration: underline;
+			}
+		}
+	}
+
+
+
+.contactTop {
+	@extend .col-sm-3;
+	text-align: right;
+	display: block;
+	padding-top: 20px;
+	@media (max-width: 991px) {
+		  padding: 5px 0 0;
+		  }
+	@media (max-width: 767px) {
+		text-align: center;
+		 padding: 5px 0;
+		}
+	p {
+		margin: 0;
+		@media (max-width: 767px) {
+			display: inline-block;
+			margin: 0 12px;
+			}
+		}
+	a {
+		text-decoration: none;
+		color: $fi-apply;
+		font-weight: 700;
+		font-size: 13.5px;
+		@media (max-width: 1099px) {
+			font-size: 11.5px;
+			}
+		@media (max-width: 991px) {
+			font-size: 10.5px;
+			  }
+		}
+	a:hover,
+	a:active,
+	a.active,
+	a:focus {
+		text-decoration: underline;
+		}
+	}
+
+
+
+
+

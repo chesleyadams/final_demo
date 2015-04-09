@@ -1,0 +1,227 @@
+/* Scss Document */
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+    :::::::::::::::::::::::::::::::::::::::::::::::::::   BLOCK ROWS   ::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.blockWrap {
+	background: #eff2f4;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	@media (max-width: 767px) {
+		padding-bottom: 0;
+		}
+	}
+
+.block {
+	border: 1px solid #eff2f4;
+	border-right: 1px solid $black25;
+	padding: 0;
+	font-size: 18px;
+	@extend .clearfix;
+	&:hover,
+	&:active,
+	&:focus {
+		background: $black2;
+		border: 1px solid $black5;
+		}
+	&.lastBlock {
+		border-right: 1px solid transparent;
+		&:hover,
+		&:active,
+		&:focus {
+			border: 1px solid $black5;
+			}
+		}
+	ul {
+		padding-left: 0;
+		li {
+			list-style: none;
+			list-style-type: none;
+			padding-left: 18px;
+			background: url(../images/bullet_dash.gif) no-repeat 0 .85em;
+			a {
+				padding: 3px 4px;
+				}
+			a:hover,
+			a:active,
+			a:focus {
+				background: $white50;
+				}
+			}
+		}
+	@media (max-width: 767px) {
+		border: 1px solid #eff2f4;
+		border-bottom: 1px solid $black25;
+		}
+	}
+
+
+
+.blockBtns {
+	float: right;
+	padding: 0 15px 15px 0;
+	#back .btn {
+		display: inline-block;
+		}
+	}
+
+
+.threeBlock {
+	#back & {
+		margin-left: 0;
+		margin-right: 0;
+		@media (max-width: 767px) {
+			margin-left: -15px;
+			margin-right: -15px;
+			padding-left: 45px;
+			padding-right: 15px;
+			}
+		p {
+			font-size: 11px;
+			}
+		}
+	h1 {
+		font-size: 24.5px;
+		color: $fi-primary;
+		font-weight: 400;
+		margin: 0;
+		padding: 0;
+		#back & {
+			font-size: 17px;
+			span {
+				max-width: 35px;
+				}
+			span img {
+				max-width: 20%;
+				margin-right: -5px;
+				}
+			}
+		@media (max-width: 1200px){
+			font-size: 19.5px;
+			}
+		@media (max-width: 989px){
+			font-size: 15.5px;
+			span {
+				margin-right: -5px;
+				}
+			}
+		@media (max-width: 767px){
+			font-size: 30px;
+			padding-top: 15px;
+			}
+		@media (max-width: 525px){
+			font-size: 20px;
+			}
+		}
+	& .block {
+		@extend .col-sm-4;
+		#back & {
+			width: 100%;
+			background: #fff;
+			margin: 15px 0 0;
+			border-radius: $border-radius-base;
+			border: 1px solid $black25;
+			ul {
+				background: none;
+				padding-left: 0;
+				}
+			ul li {
+				background: inherit;
+				margin: 0;
+				padding: 0;
+				}
+			a {
+				@extend a;
+				}
+			a:hover,
+			a:focus,
+			a:active,
+			a.active {
+				background: none;
+				}
+			a.btn,
+			a.btn-primary,
+			a.btn-white {
+				font-size: 11px;
+				padding: 5px 8px;
+				display: inline-block;
+				text-decoration: none;
+				}
+			a.btn-primary {
+				background: $fi-primary;
+				color: #fff;
+				}
+			@media (max-width: 767px) {
+				margin: 15px auto 0;
+				max-width: 100%;
+				}
+			}
+		}
+	}
+
+.fourBlock {
+	background: rgba(0,0,0,.075);
+	h1 {
+		font-size: 1.6vw;
+		@media (max-width: 767px){
+			font-size: 5vw;
+			}
+		}
+	.block {
+		@extend .col-sm-3;
+		min-height: 25vw;
+		}
+	}
+
+
+.innerWrap .threeBlock .blockInner {
+	min-height: 265px;
+	padding: 40px 40px 20px;
+	@media (max-width: 1200px){
+		padding: 30px 30px 15px;
+		min-height: 280px;
+		}
+	@media (max-width: 991px){
+		min-height: 292px;
+		}
+	@media (max-width: 903px){
+		padding: 15px 15px 8px;
+		}
+	@media (max-width: 767px){
+		min-height: 205px;
+		}
+	}
+
+.innerWrap .fourBlock .block {
+	min-height: 293px;
+	@media (max-width: 1199px){
+		min-height: 243px;
+		}
+	@media (max-width: 991px){
+		min-height: 188px;
+		}
+	}
+
+
+.blockInner {
+	padding: 40px;
+	#back & {
+		padding: 15px 0 0;
+		min-height: auto;
+		}
+	@media (max-width: 1200px){
+		padding: 30px;
+		#back & {
+			padding: 15px 0;
+			min-height: auto;
+			}
+		}
+	@media (max-width: 903px){
+		padding: 15px;
+		}
+	}
+
+
+

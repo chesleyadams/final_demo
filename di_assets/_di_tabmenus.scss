@@ -1,0 +1,209 @@
+/* Scss Document */
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::   TABMENUS   :::::::::::::::::::::::::::::::::::::::::::::: 
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.tabDrops {
+	float: left;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	@media (max-width: 1140px) {
+		
+		}
+	@media (max-width: 852px) {
+		
+		}
+	@media (max-width: 767px) {
+		float: none;
+		width: 100%;
+		clear: both;
+		display: block;
+		}
+	}
+
+.tabDrops .nav-tabs {
+  border-bottom: none;
+  float: left;
+  margin-top: 38px;
+  #back & {
+	  margin-top: 0;
+	  }
+  @media (max-width: 767px) {
+		text-align: center;
+		display: block;
+		clear: both;
+		float: none;
+		margin-top: 0;
+		}
+  > li {
+    float: left;
+	display: inline-block;
+    // Make the list-items overlay the bottom border
+    margin: 7px 5px 7px 0;
+	&.pNavPipe {
+		background: #99c2b6;
+		width: 1px;
+		height: 54px;
+	   @media (max-width: 852px) {
+		  height: 40px;
+		  }
+		@media (max-width: 550px) {
+			height: 30px;
+			}
+		}
+   @media (max-width: 852px) {
+	  
+	  }
+	@media (max-width: 767px) {
+		float: none;
+		display: block;
+		margin: 7px 2px;
+		vertical-align: middle;
+		}
+	@media (max-width: 550px) {
+		margin: 7px 0;
+		}
+    // Actual tabs (as links)
+    > a {/*
+	  color: #fff;*/
+	  background: $black1;
+	  font-size: 17px;
+	  font-weight: 400;
+      margin-right: 2px;
+	  padding: 6px 13px;
+      line-height: $line-height-base;
+      border: 1px solid $black10;
+      border-radius: $border-radius-base;
+      @media (max-width: 1099px) {
+		  font-size: 14px;
+		  margin-top: 3px;
+		  }
+	   @media (max-width: 950px) {
+		  font-size: 13px;
+		  padding: 8px 5px;
+		  }
+	   @media (max-width: 767px) {
+		  font-size: 20px;
+		  background: $white5;
+		  border-radius: 0;
+		  border: 1px solid $white10;
+		  border-left: 0;
+		  border-right: 0;
+		  }
+	  &:hover,
+      &:active,
+	  &.active {
+        background: $black2;
+		color: $fi-default;
+      }
+	  &:focus {
+        background: $black5;
+		color: $fi-default;
+      }
+    }
+  }
+  &.nav-justified {
+    @extend .nav-justified;
+    @extend .nav-tabs-justified;
+  }
+}
+
+
+.tabDrops .tab-content {
+	position: absolute;
+	top: 91px;
+	z-index: 5000;
+	max-width: 1200px;
+	min-width: 700px;
+	background: #fff;
+	border: 1px solid $black5;
+	box-shadow: 0 2px 5px $black2;
+	ul {
+		padding-bottom: 0px;
+		padding-left: 0;
+		list-style: none;
+		}
+	li {
+		font-size: 14px;
+		padding: 0;
+		}
+	li.levelOne {
+		font-size: 17px;
+		font-weight: 600;
+		color: $brand-success;
+		a {
+			padding: 4px 8px;
+			color: $black80;
+			font-size: 26px;
+			font-weight: 400;
+			}
+		}
+	a {
+		text-decoration: none;
+		padding: 4px 8px 4px 14px;
+		color: $fi-primary;
+		font-size: 18px;
+		font-weight: 300;
+		}
+	a:hover,
+	a:active,
+	a:focus,
+	a.active {
+		background: $black2;
+		}
+	@media (max-width: 767px) {
+		left: 5px;
+		max-width: 98%;
+		min-width: auto;
+		position: relative;
+		}
+	}
+.tabDrops .tab-pane.active {
+    padding: 15px 17px;
+	display: block;
+	border: none;
+	@extend .clearfix;
+	}
+
+
+
+
+
+.navCol {
+	float: left;
+	display: inline-block;
+	clear: none;
+	margin-bottom: -11px;
+		li {
+		@media (max-width: 767px) {
+			display: none;
+			}
+		}
+		li.levelOne {
+		@media (max-width: 767px) {
+			display: block;
+			}
+		}
+		@media (max-width: 767px) {
+			float: none;
+			display: block;
+			clear: both;
+			width: 100%;
+			}
+	}
+#firstDrop .navCol {
+	width: 49%;
+	min-width: 33%;
+	max-width: 49%;
+	margin: 0 auto;
+	@media (max-width: 767px) {
+		max-width: 100%;
+		}
+	}
+
+
+
+
